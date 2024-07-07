@@ -3,7 +3,7 @@ const mongoose = require("mongoose")
 const cors = require("cors")
 const PaymentModel = require("./models/Payment")
 const nodemailer = require("nodemailer");
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const MONGODB_URL="mongodb+srv://karuppasamy:xW4BxztrQGkJoVzF@clusterfordevelopment.ottv8np.mongodb.net/"
 const app = express()
 app.use(express.json())
