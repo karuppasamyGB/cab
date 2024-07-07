@@ -59,7 +59,7 @@ function Cars({ distance, type, startLoc, endLoc }) {
   }
 
   const handlePayment = async () => {
-    axios.post('http://localhost:3000/payment', { distance, price, carType, startLoc, endLoc })
+    axios.post('https://cabbackend.onrender.com/payment', { distance, price, carType, startLoc, endLoc })
       .then(res => console.log(res))
       .catch(err => console.log(err))
   };
