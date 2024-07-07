@@ -42,7 +42,7 @@ function PaymentPage() {
     alert("Congratulations! Payment Successful. Check Your Inbox for Confirmation!")
 
 
-    axios.post('http://localhost:3000/payment', { cardName, email, cardNumber, cvv, expireDate })
+    axios.post('https://cabbackend.onrender.com/payment', { cardName, email, cardNumber, cvv, expireDate })
       .then(res => console.log(res))
       .catch(err => console.log(err))
 
